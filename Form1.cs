@@ -321,7 +321,7 @@ namespace Tinder
                     modelPicture.Visible = true;
                     modelPicture.Image = Properties.Resources.Asian_Female;
                     mainLabel.Visible = true;
-                    mainLabel.Text = "Cool,";
+                    mainLabel.Text = "Cool,";  //gg
                     break;
 
             }

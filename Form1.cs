@@ -56,6 +56,7 @@ namespace Tinder
             modelPicture.Visible = false;
             option1Label.Visible = false;
             option2Label.Visible = false;
+            option3Label.Visible = false;
 
         }
 
@@ -135,7 +136,7 @@ namespace Tinder
             modelPicture.Visible = false;
             option1Label.Visible = true;
             option2Label.Visible = true;
-            option1.Location = new Point(15, 384);
+            option1.Location = new Point(12, 384);
             option2.Location = new Point(12, 434);
             option1.Size = new Size(43, 28);
             option2.Size = new Size(43, 28);
@@ -279,8 +280,8 @@ namespace Tinder
                     break;
                 case 10:
                     buttonChatSetting();
-                    option1Label.Text = "Not much, just scrolling through Tinder. Hey, speaking of campfire, have you ever been camping?";
-                    option2Label.Text = "Not much, just scrolling through Tinder. Hey, speaking of pizza, have you tried the new homemade pizzashop downtown??";
+                    option1Label.Text = "Not much, just scrolling through Tinder.\n Hey, speaking of campfire, have you ever been camping?";
+                    option2Label.Text = "Not much, just scrolling through Tinder.\n Hey, speaking of pizza, have you tried the new homemade pizzashop downtown??";
                     mainLabel.Text = "Its a match, say something nice!";
                     mainLabel.Text += "\n\n----------------------------------------------------------------";
                     mainLabel.Text += "\n\nYou: If you were a booger, I will pick I'd pick you first.";
@@ -289,15 +290,15 @@ namespace Tinder
                     break;
                 case 11:
                     buttonChatSetting();
-                    mainLabel.Text += "\n\nUser: Not much, just scrolling through Tinder. Hey, speaking of campfire, have you ever been camping?";
+                    mainLabel.Text += "\n\nYou: Not much, just scrolling through Tinder. Hey, speaking of campfire, have you ever been camping?";
                     sleep();
                     mainLabel.Text += "\n\nHim: Yeah I love camping. Haven't been in a while.";
                     sleep();
-                    mainLabel.Text += "\n\nUser: Me neither. How about we change that. Are you free this weekend.";
+                    mainLabel.Text += "\n\nYou: Me neither. How about we change that. Are you free this weekend.";
                     sleep();
                     mainLabel.Text += "\n\nHim: Sounds great! Im in";
                     sleep();
-                    mainLabel.Text += "\n\nUser: Cool! I'll plan and send you the details! Can't wait";
+                    mainLabel.Text += "\n\nYou: Cool! I'll plan and send you the details! Can't wait";
                     sleep();
                     option1Label.Text = "View Results";
                     option2Label.Text = "Play Again";
@@ -305,15 +306,158 @@ namespace Tinder
                 case 12:
                     buttonChatSetting();
                     sleep();
-                    mainLabel.Text += "\n\nUser: Oh really, when are you free?";
+                    mainLabel.Text += "\n\nYou: Not much, just scrolling through Tinder. Hey, speaking of pizza, \nhave you tried the new homemade pizzashop downtown??";
+                    sleep();
+                    mainLabel.Text += "\n\nHim: Oh really, when are you free?";
                     option1Label.Text = "Tomorow";
                     option2Label.Text = "Next week";
                     break;
                 case 13:
+                    buttonChatSetting();
+                    sleep();
+                    mainLabel.Text += "\n\nTomorrow";
+                    sleep();
+                     mainLabel.Text += "\n\n Him: Ok, See you at Domino tomorrow.";
+                    break;
+
+                case 14:
+                    buttonChatSetting();
+                    Button option3 = new Button();
+                    option3.Text = "C";
+                    option3.Size = new Size(43, 28);
+                    option3.Location = new Point(12, 341);
+                    option3.Visible = true;
+                    option3.BringToFront();
+                    option3Label.BringToFront();
+                    this.Controls.Add(option3);
+                    option3Label.Visible = true;
+                    sleep();
+                    mainLabel.Text = "\n\nYou: Next week";
+                    sleep();
+                    mainLabel.Text += "\n\n Him: Ok, See you at Domino next Saturday.";
+                    sleep();
+                    mainLabel.Text += "\n\n YOU HAVE A PRETTY GOOD TIME WITH HIM. HOWEVER HE DOESNT LIKE YOU, HE SAID THAT WE COULD BE FRIENDS";
+                    sleep();
+                    option1Label.Text = "Agree to be his friend";
+                    option2Label.Text = "Block Him";
+                    option3Label.Text = " Take it easy. We still got time";
+                    break;
+                case 15:
+                    buttonModelSetting();
+                    HideAllControls();
+                    tinderLogo.Visible = false;
+                    getStartedButton.Visible = false;
+                    option1.Visible = true;
+                    option2.Visible = true;
+                    modelPicture.Visible = true;
+                    modelPicture.Image = Properties.Resources.White_Male;
+                    mainLabel.Visible = true;
+                    mainLabel.Text = " ";
+                    break;
+                case 16:
+                    buttonChatSetting();
+                    sleep();
+                    mainLabel.Text = "HE RECEIVED THE MESSAGE BUT NEVER REPLIES.";
+                    sleep();
+                    mainLabel.Text += "\n\n BAD END";
+                    sleep();
+                    option1Label.Text = "View results";
+                    option2Label.Text = "Play Again";
+                    break;
+                case 17:
+                    buttonChatSetting();
+                    sleep(); mainLabel.Text = "You are so picky!";
+                    sleep();
+                    mainLabel.Text += "\n\nThis app may not be for you";
+                    sleep();
+                    mainLabel.Text += "\n\n BAD END";
+                    sleep();
+                    option1Label.Text = "View results";
+                    option2Label.Text = "Play Again";
                     break;
                 case 18:
-                    HideAllControls();
                     buttonModelSetting();
+                    HideAllControls();
+                    tinderLogo.Visible = false;
+                    getStartedButton.Visible = false;
+                    option1.Visible = true;
+                    option2.Visible = true;
+                    modelPicture.Visible = true;
+                    modelPicture.Image = Properties.Resources.White_Female;
+                    mainLabel.Visible = true;
+                    mainLabel.Text = " ";
+                    break;
+                case 19:
+                    buttonChatSetting();
+                    option1Label.Text = "Hey there";
+                    option2Label.Text = "Did it hurt, when you fell from heaven";
+                    mainLabel.Text = "Its a match, say something nice!";
+                    sleep();
+                    mainLabel.Text += "\n\n----------------------------------------------------------------";
+                    break;
+                case 20:
+                    buttonChatSetting();
+                    sleep();
+                    mainLabel.Text += "You: Hey there!";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: Hey baby, What's up.";
+                    sleep();
+                    mainLabel.Text += "\n\nYou:Just browsing, your life seems pretty wild.";
+                    sleep();
+                    mainLabel.Text += "\n\nHer:Yeah I know, I like to live to my fullest. Wanna join me sometime?";
+                    sleep();
+                    mainLabel.Text += "\n\nYou:No thanks, I prefer quieter lifestyle.";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: Thats alright, People got preferences.";
+                    sleep();
+                    mainLabel.Text += "\n\n            BAD END";
+                    option1Label.Text = "View result";
+                    option2Label.Text = "Try Again";
+                    break;
+                case 21:
+                    buttonChatSetting();
+                    sleep();
+                    mainLabel.Text += "\n\nYou: Did it hurt, when you fell from heaven?";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: Haha, thats a good one. Whats up.";
+                    sleep();
+                    mainLabel.Text += "\n\nYou: Just browsing. YOur lifestyle seems pretty wild.";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: Yeah, I like to live it up. Wanna join me sometimes?";
+                    sleep();
+                    option1Label.Text = "For sure, why not?";
+                    option2Label.Text = "I prefer quiter vibes, thanks.";
+                    break;
+                case 22:
+                    buttonChatSetting();
+                    sleep();
+                    mainLabel.Text += "\n\nYou: For sure, why not?";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: When are you free?";
+                    sleep();
+                    mainLabel.Text += "\n\nYou: Tomorrow at 1am?";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: Cool! I'll plan and send you the details";
+                    sleep();
+                    mainLabel.Text += "\n\n         GOOD END";
+                    option2Label.Text = "Try Again";
+                    option1Label.Text = "View result";
+                    break;
+                case 23:
+                    buttonChatSetting();
+                    sleep();
+                    mainLabel.Text += "\n\nYou: I prefer quiter vibes thanks.";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: No worries babe. hit me up if you change your mind";
+                    sleep();
+                    mainLabel.Text += "\n\n          Bad End";
+                    sleep();
+                    option1Label.Text = "View Result";
+                    option2Label.Text = "Try Again";
+                    break;
+                case 24:
+                    buttonModelSetting();
+                    HideAllControls();
                     tinderLogo.Visible = false;
                     getStartedButton.Visible = false;
                     option1.Visible = true;
@@ -321,8 +465,140 @@ namespace Tinder
                     modelPicture.Visible = true;
                     modelPicture.Image = Properties.Resources.Asian_Female;
                     mainLabel.Visible = true;
-                    mainLabel.Text = "Cool,";  //gg
+                    mainLabel.Text = " ";
                     break;
+                case 25:
+                    buttonChatSetting();
+                    option1Label.Text = "Hey there, have you seen any movies lately.";
+                    option2Label.Text = "Your profile caught my eye. I couldn't help but notice your smile in your photos.\n How's your day going?";
+                    mainLabel.Text = "Its a match, say something nice!";
+                    sleep();
+                    mainLabel.Text += "\n\n----------------------------------------------------------------";
+                    break;
+                case 26:
+                    buttonChatSetting();
+                    sleep();
+                    mainLabel.Text += "\n\nYou:Hey there, have you seen any movies lately?";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: Not really?Why?";
+                    sleep();
+                    mainLabel.Text += "\n\nYou: How about we catch one this Friday";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: What? Do I know you?";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: Weirdo!";
+                    sleep();
+                    mainLabel.Text += "\n\nYOU ARE BLOCKED.";
+                    sleep();
+                    mainLabel.Text += "\n\nBAD END";
+                    option1Label.Text = "View Results";
+                    option2Label.Text = "Try Again";
+                    break;
+
+                case 27:
+                    buttonChatSetting();
+                    sleep();
+                    mainLabel.Text += "\n\nYou: Your profile caught my eye. I couldn't help but notice your smile in your photos.\n How's your day going?";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: Aw, thank you! Just another day, busy work you know.How about you?";
+                    sleep();
+                    option1Label.Text += "\n\nNot bad, just take it easy So, have you seen any good movies lately?\n I'm a bit of a movie buff myself.";
+                    option2Label.Text += "\n\nPretty good, can be better with you in the cinema with me tonight. \nI have booked the seats for just the 2 of us.What do you think?";
+                    break;
+
+                case 28:
+                    buttonChatSetting();
+                    sleep();
+                    mainLabel.Text += "\n\nYou: Not bad, just take it easy So, have you seen any good movies lately?\n I'm a bit of a movie buff myself.";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: Not really, I've been wanting to catch a movie though.\n Do you know any good cinema";
+                    sleep();
+                    mainLabel.Text += "\n\nYou: Of course, I know this great cinema at downtown. How about this Friday night.";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: Cool! Im down. I'll send you the details later.";
+                    sleep();
+                    mainLabel.Text += "GOOD END";
+                    option1Label.Text = "View Results";
+                    option2Label.Text = "Try Again";
+                    break;
+                case 29:
+                    buttonChatSetting();
+                    sleep();
+                    mainLabel.Text += "\n\nYou: Pretty good, can be better with you in the cinema with me tonight.\n I have booked the seats for just the 2 of us. What do you think?";
+                    sleep();
+                    mainLabel.Text += "\n\nHer: Sorry Im not into movies thanks. Have fun with your movie.";
+                    sleep();
+                    mainLabel.Text += "BAD END";
+                    option1Label.Text = "View Results";
+                    option2Label.Text = "Try Again";
+                    break;
+                case 30:
+                    buttonModelSetting();
+                    HideAllControls();
+                    tinderLogo.Visible = false;
+                    getStartedButton.Visible = false;
+                    option1.Visible = true;
+                    option2.Visible = true;
+                    modelPicture.Visible = true;
+                    modelPicture.Image = Properties.Resources.Black_Female;
+                    mainLabel.Visible = true;
+                    mainLabel.Text = " ";
+                    break;
+                case 31:
+                    buttonChatSetting();
+                    sleep();
+                    mainLabel.Text = "SHE RECEIVED THE MESSAGE BUT NEVER REPLIES.";
+                    sleep();
+                    mainLabel.Text += "\n\n BAD END";
+                    sleep();
+                    option1Label.Text = "View results";
+                    option2Label.Text = "Play Again";
+                    break;
+                case 32:
+                    buttonChatSetting();
+                    sleep(); mainLabel.Text = "You are so picky!";
+                    sleep();
+                    mainLabel.Text += "\n\nThis app may not be for you";
+                    sleep();
+                    mainLabel.Text += "\n\n BAD END";
+                    sleep();
+                    option1Label.Text = "View results";
+                    option2Label.Text = "Play Again";
+                    break;
+                case 98:
+                    HideAllControls();
+                    mainLabel.Visible = true;
+                    mainLabel.Text = "    --SECRET ENDING--   ";
+                    sleep();
+                    mainLabel.Text += "\n\n    --He Ghosted And Never Show Up--   ";
+                    this.Refresh();
+                    Thread.Sleep(3000);
+                    Application.Exit();
+
+                    break;
+                case 99:
+                    HideAllControls();
+                    mainLabel.Visible = true;
+                    mainLabel.Text = "    --BAD ENDING--   ";
+                    sleep();
+                    mainLabel.Text += "\n\n    --The app didn't work out. You die in loneliness--   ";
+                    this.Refresh();
+                    Thread.Sleep(3000);
+                    Application.Exit();
+
+                    break;
+                case 100:
+                    HideAllControls();
+                    mainLabel.Visible = true;
+                    mainLabel.Text = "    --GOOD ENDING--   ";
+                    sleep();
+                    mainLabel.Text += "\n\n    --After a couple more dates you both decide to be a couple.--   ";
+                    this.Refresh();
+                    Thread.Sleep(3000);
+                    Application.Exit();
+
+                    break;
+
 
             }
         }
@@ -332,7 +608,7 @@ namespace Tinder
             if (page == 3)
             {
                 page = 4;
-            }
+            } 
             else if (page == 4)
             {
                 page = 5;

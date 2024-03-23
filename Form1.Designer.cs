@@ -46,6 +46,7 @@
             this.modelPicture = new System.Windows.Forms.PictureBox();
             this.option1Label = new System.Windows.Forms.Label();
             this.option2Label = new System.Windows.Forms.Label();
+            this.option3Label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tinderLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.modelPicture)).BeginInit();
             this.SuspendLayout();
@@ -202,21 +203,30 @@
             // 
             // option1Label
             // 
-            this.option1Label.BackColor = System.Drawing.Color.Transparent;
+            this.option1Label.BackColor = System.Drawing.Color.White;
             this.option1Label.Location = new System.Drawing.Point(64, 381);
             this.option1Label.Name = "option1Label";
-            this.option1Label.Size = new System.Drawing.Size(204, 26);
+            this.option1Label.Size = new System.Drawing.Size(204, 50);
             this.option1Label.TabIndex = 16;
             this.option1Label.Text = "...";
             // 
             // option2Label
             // 
-            this.option2Label.BackColor = System.Drawing.Color.Transparent;
+            this.option2Label.BackColor = System.Drawing.Color.White;
             this.option2Label.Location = new System.Drawing.Point(64, 434);
             this.option2Label.Name = "option2Label";
-            this.option2Label.Size = new System.Drawing.Size(204, 26);
+            this.option2Label.Size = new System.Drawing.Size(204, 48);
             this.option2Label.TabIndex = 17;
             this.option2Label.Text = "...";
+            // 
+            // option3Label
+            // 
+            this.option3Label.BackColor = System.Drawing.Color.White;
+            this.option3Label.Location = new System.Drawing.Point(64, 331);
+            this.option3Label.Name = "option3Label";
+            this.option3Label.Size = new System.Drawing.Size(204, 50);
+            this.option3Label.TabIndex = 18;
+            this.option3Label.Text = "...";
             // 
             // Form1
             // 
@@ -224,6 +234,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tinder.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(287, 481);
+            this.Controls.Add(this.option3Label);
             this.Controls.Add(this.option2Label);
             this.Controls.Add(this.option1Label);
             this.Controls.Add(this.modelPicture);
@@ -271,6 +282,7 @@
         private System.Windows.Forms.PictureBox modelPicture;
         private System.Windows.Forms.Label option1Label;
         private System.Windows.Forms.Label option2Label;
+        private System.Windows.Forms.Label option3Label;
     }
 }
 

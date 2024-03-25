@@ -47,6 +47,7 @@
             this.option1Label = new System.Windows.Forms.Label();
             this.option2Label = new System.Windows.Forms.Label();
             this.option3Label = new System.Windows.Forms.Label();
+            this.option3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tinderLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.modelPicture)).BeginInit();
             this.SuspendLayout();
@@ -186,7 +187,7 @@
             this.mainLabel.BackColor = System.Drawing.Color.Transparent;
             this.mainLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mainLabel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainLabel.Location = new System.Drawing.Point(12, 22);
+            this.mainLabel.Location = new System.Drawing.Point(12, 9);
             this.mainLabel.Name = "mainLabel";
             this.mainLabel.Size = new System.Drawing.Size(263, 334);
             this.mainLabel.TabIndex = 14;
@@ -194,7 +195,7 @@
             // 
             // modelPicture
             // 
-            this.modelPicture.Location = new System.Drawing.Point(24, 132);
+            this.modelPicture.Location = new System.Drawing.Point(24, 85);
             this.modelPicture.Name = "modelPicture";
             this.modelPicture.Size = new System.Drawing.Size(232, 224);
             this.modelPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -228,12 +229,23 @@
             this.option3Label.TabIndex = 18;
             this.option3Label.Text = "...";
             // 
+            // option3
+            // 
+            this.option3.Location = new System.Drawing.Point(12, 341);
+            this.option3.Name = "option3";
+            this.option3.Size = new System.Drawing.Size(43, 28);
+            this.option3.TabIndex = 19;
+            this.option3.Text = "C";
+            this.option3.UseVisualStyleBackColor = true;
+            this.option3.Click += new System.EventHandler(this.option3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tinder.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(287, 481);
+            this.Controls.Add(this.option3);
             this.Controls.Add(this.option3Label);
             this.Controls.Add(this.option2Label);
             this.Controls.Add(this.option1Label);
@@ -283,6 +295,7 @@
         private System.Windows.Forms.Label option1Label;
         private System.Windows.Forms.Label option2Label;
         private System.Windows.Forms.Label option3Label;
+        private System.Windows.Forms.Button option3;
     }
 }
 

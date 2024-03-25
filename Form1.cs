@@ -26,6 +26,8 @@ namespace Tinder
 
         private void sleep()
         {
+            SoundPlayer noti = new SoundPlayer(Properties.Resources.Notification);
+            noti.Play();
             this.Refresh();
             Thread.Sleep(1000);
         }
@@ -57,6 +59,7 @@ namespace Tinder
             option1Label.Visible = false;
             option2Label.Visible = false;
             option3Label.Visible = false;
+            option3.Visible = false;
 
         }
 
@@ -322,14 +325,9 @@ namespace Tinder
 
                 case 14:
                     buttonChatSetting();
-                    Button option3 = new Button();
-                    option3.Text = "C";
-                    option3.Size = new Size(43, 28);
-                    option3.Location = new Point(12, 341);
                     option3.Visible = true;
                     option3.BringToFront();
                     option3Label.BringToFront();
-                    this.Controls.Add(option3);
                     option3Label.Visible = true;
                     sleep();
                     mainLabel.Text = "\n\nYou: Next week";
@@ -874,6 +872,16 @@ namespace Tinder
             }
             pagesSetting();
 
+        }
+
+        private void option3_Click(object sender, EventArgs e)
+        {
+            if (page == 14)
+            {
+
+                page = 100;
+            }
+            pagesSetting();
         }
     }
 

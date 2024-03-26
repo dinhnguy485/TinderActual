@@ -578,7 +578,7 @@ namespace Tinder
                     mainLabel.Visible = true;
                     mainLabel.Text = "    --BAD ENDING--   ";
                     sleep();
-                    mainLabel.Text += "\n\n    --The app didn't work out. You die in loneliness--   ";
+                    mainLabel.Text += "\n\n    --The app didn't work out. You die of loneliness--   ";
                     this.Refresh();
                     Thread.Sleep(3000);
                     Application.Exit();

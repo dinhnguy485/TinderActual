@@ -125,8 +125,8 @@ namespace Tinder
         private void buttonModelSetting()
         {
             mainLabel.BackColor = Color.Transparent;
-            option1.Location = new Point(24, 396);
-            option2.Location = new Point(160, 396);
+            option1.Location = new Point(160, 396);
+            option2.Location = new Point(24, 396);
             option1.Size = new Size(110, 35);
             option2.Size = new Size(110, 35);
             option1.Text = "Right";
@@ -182,7 +182,6 @@ namespace Tinder
                     modelPicture.Visible = true;
                     modelPicture.Image = Properties.Resources.Asian_Male;
                     mainLabel.Visible = true;
-                    mainLabel.Text = "My name is Kevin Lee. Im Chinese. 18 years old.\n\nIm cunrrently studying in University Of Toronto.\n\nMY hobbies: Musics, Badminton, Reading books.\n\nJobs: Im a partime software developer for Google.";
                     break;
 
                 case 4:
@@ -500,8 +499,8 @@ namespace Tinder
                     sleep();
                     mainLabel.Text += "\n\nHer: Aw, thank you! Just another day, busy work you know.How about you?";
                     sleep();
-                    option1Label.Text += "\n\nNot bad, just take it easy So, have you seen any good movies lately?\n I'm a bit of a movie buff myself.";
-                    option2Label.Text += "\n\nPretty good, can be better with you in the cinema with me tonight. \nI have booked the seats for just the 2 of us.What do you think?";
+                    option1Label.Text = "\n\nNot bad, just take it easy So, have you seen any good movies lately?\n I'm a bit of a movie buff myself.";
+                    option2Label.Text = "\n\nPretty good, can be better with you in the cinema with me tonight. \nI have booked the seats for just the 2 of us.What do you think?";
                     break;
 
                 case 28:

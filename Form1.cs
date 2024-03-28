@@ -9,6 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Media;
+
+//27th March 2024
+//Tinder App
+//Tri Nguyen
+
 namespace Tinder
 {
     public partial class Form1 : Form
@@ -84,8 +89,6 @@ namespace Tinder
             }
             else if (page == 2)
             {
-                
-
                 try
                 {
                     int birthYear = Convert.ToInt16(birthYearInput.Text);
@@ -112,14 +115,9 @@ namespace Tinder
                     String title = "Error";
                     MessageBoxButtons buttons = MessageBoxButtons.OK;
                     MessageBox.Show(message, title, buttons);
-
                 }
             }
-
             pagesSetting();
-
-
-            
         }
 
         private void buttonModelSetting()
@@ -145,15 +143,12 @@ namespace Tinder
             option2.Size = new Size(43, 28);
             option1.Text = "A";
             option2.Text = "B";
-            
         }
         private void page1()
         {
             tinderLogo.Visible = true;
             getStartedButton.Visible = true;
             descriptionLabel.Visible = true;
-            
-
         }
         private void pagesSetting()
         {
@@ -183,7 +178,6 @@ namespace Tinder
                     modelPicture.Image = Properties.Resources.Asian_Male;
                     mainLabel.Visible = true;
                     break;
-
                 case 4:
                     buttonChatSetting();
                     option1Label.Text = "Cool, I like hiking and cycling what about you";
@@ -197,7 +191,6 @@ namespace Tinder
                     mainLabel.Text += "\n\nYou: Ye, just trying to break the ice. So what do you do for fun.";
                     sleep();
                     mainLabel.Text += "\n\nHim: Not much, hangout with friends mostly.";
-                   
                         break;
                 case 5:
                     buttonChatSetting();
@@ -321,7 +314,6 @@ namespace Tinder
                     sleep();
                      mainLabel.Text += "\n\n Him: Ok, See you at Domino tomorrow.";
                     break;
-
                 case 14:
                     buttonChatSetting();
                     option3.Visible = true;
@@ -582,7 +574,6 @@ namespace Tinder
                     this.Refresh();
                     Thread.Sleep(3000);
                     Application.Exit();
-
                     break;
                 case 100:
                     HideAllControls();
@@ -593,10 +584,7 @@ namespace Tinder
                     this.Refresh();
                     Thread.Sleep(3000);
                     Application.Exit();
-
                     break;
-
-
             }
         }
 
@@ -732,8 +720,6 @@ namespace Tinder
             {
                 page = 99;
             }
-
-
             pagesSetting();
         }
 
@@ -870,20 +856,16 @@ namespace Tinder
                 page = 1;
             }
             pagesSetting();
-
         }
 
         private void option3_Click(object sender, EventArgs e)
         {
             if (page == 14)
             {
-
                 page = 100;
             }
             pagesSetting();
         }
     }
-
-
 }
 

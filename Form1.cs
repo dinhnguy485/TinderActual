@@ -44,7 +44,6 @@ namespace Tinder
         private void maleButton_Click(object sender, EventArgs e)
         {
             maleButtonWasClicked = true;
-
         }
         private void HideAllControls()
         {
@@ -65,7 +64,6 @@ namespace Tinder
             option2Label.Visible = false;
             option3Label.Visible = false;
             option3.Visible = false;
-
         }
 
         private void ShowAllControls()
@@ -107,7 +105,6 @@ namespace Tinder
                     {
                         page = 18;
                     }
-
                 }
                 catch (FormatException)
                 {
@@ -119,7 +116,7 @@ namespace Tinder
             }
             pagesSetting();
         }
-
+        
         private void buttonModelSetting()
         {
             mainLabel.BackColor = Color.Transparent;
@@ -144,12 +141,14 @@ namespace Tinder
             option1.Text = "A";
             option2.Text = "B";
         }
+        
         private void page1()
         {
             tinderLogo.Visible = true;
             getStartedButton.Visible = true;
             descriptionLabel.Visible = true;
         }
+        
         private void pagesSetting()
         {
             switch (page)
@@ -163,7 +162,6 @@ namespace Tinder
                     getStartedButton.Text = "Continue";
                     descriptionLabel.Visible = false;
                     break;
-
                 case 999:
                     getStartedButton.Text = "You are not allowed";
                     break;
@@ -191,7 +189,7 @@ namespace Tinder
                     mainLabel.Text += "\n\nYou: Ye, just trying to break the ice. So what do you do for fun.";
                     sleep();
                     mainLabel.Text += "\n\nHim: Not much, hangout with friends mostly.";
-                        break;
+                    break;
                 case 5:
                     buttonChatSetting();
                     sleep();
@@ -483,7 +481,6 @@ namespace Tinder
                     option1Label.Text = "View Results";
                     option2Label.Text = "Try Again";
                     break;
-
                 case 27:
                     buttonChatSetting();
                     sleep();
@@ -494,7 +491,6 @@ namespace Tinder
                     option1Label.Text = "\n\nNot bad, just take it easy So, have you seen any good movies lately?\n I'm a bit of a movie buff myself.";
                     option2Label.Text = "\n\nPretty good, can be better with you in the cinema with me tonight. \nI have booked the seats for just the 2 of us.What do you think?";
                     break;
-
                 case 28:
                     buttonChatSetting();
                     sleep();
@@ -563,7 +559,6 @@ namespace Tinder
                     this.Refresh();
                     Thread.Sleep(3000);
                     Application.Exit();
-
                     break;
                 case 99:
                     HideAllControls();

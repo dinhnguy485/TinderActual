@@ -36,15 +36,21 @@ namespace Tinder
             this.Refresh();
             Thread.Sleep(1000);
         }
+        //function that waits 1 seconds and sound effect for the notification.
+        
         private void femaleButton_Click(object sender, EventArgs e)
         {
             femaleButtonWasPressed = true;
         }
+        //a boolean that when its clicked, we navigate to the men
+
 
         private void maleButton_Click(object sender, EventArgs e)
         {
             maleButtonWasClicked = true;
         }
+        //a boolean that when its clicked, we navigate to women
+        
         private void HideAllControls()
         {
             nameLabel.Visible = false;
@@ -65,6 +71,7 @@ namespace Tinder
             option3Label.Visible = false;
             option3.Visible = false;
         }
+        //a control to hide all button when started
 
         private void ShowAllControls()
         {
@@ -78,6 +85,7 @@ namespace Tinder
             maleButton.Visible = true;
             femaleButton.Visible = true;
         }
+        //a control to show all the controls in the login page
 
         private void getStartedButton_Click(object sender, EventArgs e)
         {
@@ -116,6 +124,7 @@ namespace Tinder
             }
             pagesSetting();
         }
+        //when start button is clicked, navigate to both male or female depends on what gender they picked
         
         private void buttonModelSetting()
         {
@@ -127,6 +136,7 @@ namespace Tinder
             option1.Text = "Right";
             option2.Text = "Left";
         }
+        //change the button location and text to right and left
 
         private void buttonChatSetting()
         {
@@ -141,6 +151,7 @@ namespace Tinder
             option1.Text = "A";
             option2.Text = "B";
         }
+        //change the button to the chat setting
         
         private void page1()
         {
@@ -148,6 +159,7 @@ namespace Tinder
             getStartedButton.Visible = true;
             descriptionLabel.Visible = true;
         }
+        //to show the login page
         
         private void pagesSetting()
         {
@@ -582,6 +594,7 @@ namespace Tinder
                     break;
             }
         }
+        //page setting
 
         private void option1_Click(object sender, EventArgs e)
         {
@@ -717,6 +730,7 @@ namespace Tinder
             }
             pagesSetting();
         }
+        //option 1 navigator
 
         private void option2_Click(object sender, EventArgs e)
         {
@@ -852,6 +866,7 @@ namespace Tinder
             }
             pagesSetting();
         }
+        option2 navigator
 
         private void option3_Click(object sender, EventArgs e)
         {
@@ -861,6 +876,7 @@ namespace Tinder
             }
             pagesSetting();
         }
+        option3 navigator.
     }
 }
 
